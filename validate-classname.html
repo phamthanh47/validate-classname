@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateClassName(str) {
+        let patt=/^[C|A|P][0-9]{4}[G|H|I|K|L|M]$/;
+        let result= patt.test(str);
+        if(result){
+            alert("hop le");
+        }
+        else
+            alert("khong hop le");
+    }
+    let str1="C0318G";validateClassName(str1);
+    let str2="M0318G";validateClassName(str2);
+</script>
+</body>
+</html>
